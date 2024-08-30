@@ -1808,7 +1808,7 @@
 <span class="normal">75</span>
 <span class="normal">76</span>
 <span class="normal">77</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">create_analyser</span><span class="p">(</span>
-    <span class="n">model_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">model_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_NER_MODEL</span><span class="p">,</span>
     <span class="n">spacy_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_SPACY_MODEL</span><span class="p">,</span>
     <span class="n">language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span>
     <span class="n">regex_entities</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="n">PteredactylRecogniser</span><span class="p">]</span> <span class="o">=</span> <span class="n">DEFAULT_REGEX_ENTITIES</span><span class="p">,</span>
@@ -1944,7 +1944,7 @@ It is recommended to first create an analyser and feed this in to be reused with
               </div>
             </td>
             <td>
-                  <code>None</code>
+                  <code><span title="pteredactyl.defaults.DEFAULT_NER_MODEL">DEFAULT_NER_MODEL</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -2171,7 +2171,7 @@ print(results)
     <span class="n">analyser</span><span class="p">:</span> <span class="n">AnalyzerEngine</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">entities</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">DEFAULT_ENTITIES</span><span class="p">,</span>
     <span class="n">regex_entities</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="n">PteredactylRecogniser</span><span class="p">]</span> <span class="o">=</span> <span class="n">DEFAULT_REGEX_ENTITIES</span><span class="p">,</span>
-    <span class="n">model_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">model_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_NER_MODEL</span><span class="p">,</span>
     <span class="n">spacy_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_SPACY_MODEL</span><span class="p">,</span>
     <span class="n">language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span>
     <span class="n">mask_individual_words</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
@@ -2483,7 +2483,7 @@ If the tumor is malignant, further treatment, such as surgery or radiotherapy, m
     <span class="n">regex_entities</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="n">PteredactylRecogniser</span><span class="p">]</span> <span class="o">=</span> <span class="n">DEFAULT_REGEX_ENTITIES</span><span class="p">,</span>
     <span class="n">highlight</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="n">replacement_lists</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">model_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">model_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_NER_MODEL</span><span class="p">,</span>
     <span class="n">spacy_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">DEFAULT_SPACY_MODEL</span><span class="p">,</span>
     <span class="n">language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span>
     <span class="n">mask_individual_words</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
